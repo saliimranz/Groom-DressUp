@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 9fb04b3423b9b584a8df8dd9eeaf04a7
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Milky Nice
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: ba0d1b9426e32364ea96b3440fc7c26d, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,47 @@
+[2022-8-22 14:18:33] layer "star1.png copy": Expected end of input but "c" found.
+[2022-8-22 14:18:33] layer "star2.png copy": Expected end of input but "c" found.
+[2022-8-22 14:18:33] layer "judges panel.png": Duplicate path: judges panel.png
+[2022-8-22 14:18:33] layer "player_1 icon_1.png": Duplicate path: player_1 icon_1.png
+[2022-8-22 14:18:33] layer "player_1 icon_2.png": Duplicate path: player_1 icon_2.png
+[2022-8-22 14:18:33] layer "player_1 icon_3.png": Duplicate path: player_1 icon_3.png
+[2022-8-22 14:18:33] layer "player_1 icon_4.png": Duplicate path: player_1 icon_4.png
+[2022-8-22 14:18:33] layer "player_1 icon_5.png": Duplicate path: player_1 icon_5.png
+[2022-8-22 14:18:33] layer "player_1 icon_6.png": Duplicate path: player_1 icon_6.png
+[2022-8-22 14:18:33] layer "player_1 icon_7.png": Duplicate path: player_1 icon_7.png
+[2022-8-22 14:18:33] layer "player_1 icon_8.png ": Duplicate path: player_1 icon_8.png
+[2022-8-22 14:18:33] layer "player_2 icon_1.png": Duplicate path: player_2 icon_1.png
+[2022-8-22 14:18:33] layer "player_2 icon_2.png": Duplicate path: player_2 icon_2.png
+[2022-8-22 14:18:33] layer "player_2 icon_3.png": Duplicate path: player_2 icon_3.png
+[2022-8-22 14:18:33] layer "player_2 icon_4.png": Duplicate path: player_2 icon_4.png
+[2022-8-22 14:18:33] layer "player_2 icon_5.png": Duplicate path: player_2 icon_5.png
+[2022-8-22 14:18:33] layer "player_2 icon_6.png": Duplicate path: player_2 icon_6.png
+[2022-8-22 14:18:33] layer "player_2 icon_7.png": Duplicate path: player_2 icon_7.png
+[2022-8-22 14:18:33] layer "player_2 icon_8.png ": Duplicate path: player_2 icon_8.png
+[2022-8-22 14:18:33] layer "SCORE BAR BG.png": Duplicate path: SCORE BAR BG.png
+[2022-8-22 14:18:33] layer "SCORE BAR front.png": Duplicate path: SCORE BAR front.png
+[2022-8-22 14:18:33] layer "SCORE BAR BG.png copy": Expected end of input but "c" found.
+[2022-8-22 14:18:33] layer "SCORE BAR front.png copy": Expected end of input but "c" found.
+[2022-8-22 14:21:12] layer "SCORE BAR front.png copy 2": Expected end of input but "c" found.
+[2022-8-22 14:21:12] layer "SCORE BAR BG.png copy 2": Expected end of input but "c" found.
+[2022-8-22 14:21:12] layer "+100 COINS": Expected Either a default asset specification or a layer asset specification but "+" found.
+[2022-8-22 14:18:33] layer "judges panel.png": Duplicate path: judges panel.png
+[2022-8-22 14:18:33] layer "player_1 icon_1.png": Duplicate path: player_1 icon_1.png
+[2022-8-22 14:18:33] layer "player_1 icon_2.png": Duplicate path: player_1 icon_2.png
+[2022-8-22 14:18:33] layer "player_1 icon_3.png": Duplicate path: player_1 icon_3.png
+[2022-8-22 14:18:33] layer "player_1 icon_4.png": Duplicate path: player_1 icon_4.png
+[2022-8-22 14:18:33] layer "player_1 icon_5.png": Duplicate path: player_1 icon_5.png
+[2022-8-22 14:18:33] layer "player_1 icon_6.png": Duplicate path: player_1 icon_6.png
+[2022-8-22 14:18:33] layer "player_1 icon_7.png": Duplicate path: player_1 icon_7.png
+[2022-8-22 14:18:33] layer "player_1 icon_8.png ": Duplicate path: player_1 icon_8.png
+[2022-8-22 14:18:33] layer "player_2 icon_1.png": Duplicate path: player_2 icon_1.png
+[2022-8-22 14:18:33] layer "player_2 icon_2.png": Duplicate path: player_2 icon_2.png
+[2022-8-22 14:18:33] layer "player_2 icon_3.png": Duplicate path: player_2 icon_3.png
+[2022-8-22 14:18:33] layer "player_2 icon_4.png": Duplicate path: player_2 icon_4.png
+[2022-8-22 14:18:33] layer "player_2 icon_5.png": Duplicate path: player_2 icon_5.png
+[2022-8-22 14:18:33] layer "player_2 icon_6.png": Duplicate path: player_2 icon_6.png
+[2022-8-22 14:18:33] layer "player_2 icon_7.png": Duplicate path: player_2 icon_7.png
+[2022-8-22 14:18:33] layer "player_2 icon_8.png ": Duplicate path: player_2 icon_8.png
+[2022-8-22 14:18:33] layer "SCORE BAR BG.png": Duplicate path: SCORE BAR BG.png
+[2022-8-22 14:18:33] layer "SCORE BAR front.png": Duplicate path: SCORE BAR front.png
+[2022-8-22 14:18:33] layer "SCORE BAR BG.png copy": Expected end of input but "c" found.
+[2022-8-22 14:18:33] layer "SCORE BAR front.png copy": Expected end of input but "c" found.
