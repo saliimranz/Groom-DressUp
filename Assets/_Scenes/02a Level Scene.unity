@@ -1677,7 +1677,7 @@ GameObject:
   - component: {fileID: 1300910539}
   - component: {fileID: 1300910538}
   m_Layer: 5
-  m_Name: SettingMenu-Button
+  m_Name: PauseMenu-Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2014,7 +2014,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 389.41003, y: -869}
+  m_AnchoredPosition: {x: 389.41, y: -1014}
   m_SizeDelta: {x: 778.82, y: 233.223}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1345854328
