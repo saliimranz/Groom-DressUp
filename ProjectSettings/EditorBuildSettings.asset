@@ -9,6 +9,24 @@ EditorBuildSettings:
     path: Assets/_Scenes/00 Splash.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/_Scenes/01a StartMenu.unity
+    guid: cdd664ac93578094781511731fa4f50e
+  - enabled: 1
+    path: Assets/_Scenes/01b Play.unity
+    guid: edf20b6feef68ef40b7c1ad0d0025a50
+  - enabled: 1
+    path: Assets/_Scenes/01c Challenge Appeal.unity
+    guid: 5c8d749ba8deec0479b518a7a7422baa
+  - enabled: 1
+    path: Assets/_Scenes/01d Challenger Matched.unity
+    guid: 972cd4649bd25ae4bb8867010763359d
+  - enabled: 1
     path: Assets/_Scenes/02a Level Scene.unity
     guid: 8f1d89d643558aa42a6f6ead2d6a8e64
+  - enabled: 1
+    path: Assets/_Scenes/03a Win Scene.unity
+    guid: 3ef6f56b97ccab2468a5c77c609161b2
+  - enabled: 1
+    path: Assets/_Scenes/03b Lose Scene.unity
+    guid: f29454d4c3efb714c8040fbab000c4fc
   m_configObjects: {}
