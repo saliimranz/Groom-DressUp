@@ -26,12 +26,21 @@ public class LevelManager : MonoBehaviour
 
     public void QuitRequest()
     {
-        Debug.Log("Quit the game ");
-        Application.Quit();
+          #if UNITY_EDITOR
+        UnityEditor.EditorApplication.ExitPlaymode();
+          #endif
+        Application.Quit(); 
     }
     public void LoadNextLevel()
     {
         int LoadedScene = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(LoadedScene + 1);
     }
+
+    public void LoadPrevLevel()
+    {
+        int LoadedScene = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(LoadedScene - 1);
+    }
+
 }
