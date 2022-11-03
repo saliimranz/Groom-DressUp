@@ -11,11 +11,11 @@ public class AvatarManager : MonoBehaviour
     void Start()
     {
         image = GetComponent<Image>();
-        image.sprite = BannerSprite[PlayerPrefsManager.GetAvatarKey()];
+        image.sprite = BannerSprite[MainManager.Instance.SpriteInt];
     }
     public void GetImageOnClick(int CountofAv)
     {
-            image.sprite = BannerSprite[CountofAv];
-        PlayerPrefsManager.SetAvatarKey(CountofAv);
+        MainManager.Instance.SpriteInt = CountofAv;
+        image.sprite = BannerSprite[CountofAv];
     }
 }

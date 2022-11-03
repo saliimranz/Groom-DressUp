@@ -7,6 +7,6 @@ public class test : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        print(PlayerPrefsManager.GetAvatarKey());    
+        print("Avatar Selected is: " + MainManager.Instance.SpriteInt);    
     }
 }

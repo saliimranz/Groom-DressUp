@@ -1639,6 +1639,7 @@ GameObject:
   - component: {fileID: 2120012922}
   - component: {fileID: 2120012924}
   - component: {fileID: 2120012923}
+  - component: {fileID: 2120012925}
   m_Layer: 5
   m_Name: Player-Panel
   m_TagString: Untagged
@@ -1705,3 +1706,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2120012921}
   m_CullTransparentMesh: 1
+--- !u!114 &2120012925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120012921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c78d368ab37d07d4eba1089c37f33d32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerAva:
+  - {fileID: 21300000, guid: 842f595543bdf6a4688da72df2131890, type: 3}
+  - {fileID: 21300000, guid: 9ed1242943f6a2f45a55ab60950b6805, type: 3}
+  - {fileID: 21300000, guid: 5efe28c6ac29be545addae0ec3e7e6fc, type: 3}
+  - {fileID: 21300000, guid: 35bb57dd825dc744a9d1fb16c339336c, type: 3}
+  - {fileID: 21300000, guid: 4254c11e34191dd48b32593359c869da, type: 3}
+  - {fileID: 21300000, guid: 1d6e5b1d87c6e4840badfa3427b09708, type: 3}
+  - {fileID: 21300000, guid: df4d4e522fd7e4445b55710e6ffe8b8e, type: 3}
+  - {fileID: 21300000, guid: 1d421cddaf35e5c4b8235b2b712aca3d, type: 3}

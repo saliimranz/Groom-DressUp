@@ -26,6 +26,7 @@ public class LevelManager : MonoBehaviour
 
     public void QuitRequest()
     {
+        MainManager.Instance.SaveSpriteInt();
           #if UNITY_EDITOR
         UnityEditor.EditorApplication.ExitPlaymode();
           #endif
