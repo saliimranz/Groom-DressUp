@@ -16,6 +16,7 @@ public class AvatarManager : MonoBehaviour
     public void GetImageOnClick(int CountofAv)
     {
         MainManager.Instance.SpriteInt = CountofAv;
+        MainManager.Instance.SaveSpriteInt();
         image.sprite = BannerSprite[CountofAv];
     }
 }

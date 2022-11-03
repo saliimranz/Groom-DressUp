@@ -13,10 +13,4 @@ public class PlayerAvatar : MonoBehaviour
         image = GetComponent<Image>();
         image.sprite = playerAva[MainManager.Instance.SpriteInt];
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
