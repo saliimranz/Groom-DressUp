@@ -8,6 +8,7 @@ public class MainManager : MonoBehaviour
     public static MainManager Instance;
     public int SpriteInt;
     public int regionSelect;
+    public int itemTransfer;
 
     public void Awake()
     {

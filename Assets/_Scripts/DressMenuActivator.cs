@@ -4,24 +4,25 @@ using UnityEngine;
 
 public class DressMenuActivator : MonoBehaviour
 {
+    private Transform parent;
     public GameObject[] regions;
     private int selected;
     // Start is called before the first frame update
     void Start()
     {
+        parent = GameObject.Find("SideMenuBar-Panel").transform;
         selected = MainManager.Instance.regionSelect;
         MenuActivationMethod();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void MenuActivationMethod()
     {
-        regions[selected].SetActive(true);
+        GameObject ArrayMenuSelected = regions[selected];
+       // regions[selected].SetActive(true);
+
+        GameObject newMenu = Instantiate(ArrayMenuSelected, ArrayMenuSelected.transform.position, Quaternion.identity) as GameObject;
+        newMenu.SetActive(true);
+        newMenu.transform.SetParent(parent, false);
     } 
     public void MenuDeaactivate()
     {

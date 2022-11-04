@@ -22,4 +22,9 @@ public class LevelSubMenuCloser : MonoBehaviour
             }
         }
     }
+
+    public void SendItemNum(int ItemToSpawn)
+    {
+        MainManager.Instance.itemTransfer = ItemToSpawn;
+    }
 }
