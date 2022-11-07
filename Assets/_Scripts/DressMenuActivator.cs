@@ -22,7 +22,7 @@ public class DressMenuActivator : MonoBehaviour
 
         GameObject newMenu = Instantiate(ArrayMenuSelected, ArrayMenuSelected.transform.position, Quaternion.identity) as GameObject;
         newMenu.SetActive(true);
-        newMenu.transform.SetParent(parent, false);
+        newMenu.transform.SetParent(parent, false); // So the position is in world cordinates not parent's
     } 
     public void MenuDeaactivate()
     {
