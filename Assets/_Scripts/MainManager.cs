@@ -9,6 +9,7 @@ public class MainManager : MonoBehaviour
     public int SpriteInt;
     public int regionSelect;
     public int itemTransfer;
+    public int ItemSelected;
 
     public void Awake()
     {

@@ -31,7 +31,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3232151270900073897}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -183,7 +183,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3232151270900073897}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -237,13 +237,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3232151270900073897}
+  - component: {fileID: 1503201532}
   m_Layer: 5
   m_Name: -------Avatar-SouthAsian---------
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3232151270900073897
 RectTransform:
   m_ObjectHideFlags: 0
@@ -251,14 +252,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3232151270900073896}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3232151269743049277}
   - {fileID: 3232151270298091422}
   - {fileID: 3232151271637754351}
+  - {fileID: 3232151269743049277}
   - {fileID: 3232151269844394133}
   - {fileID: 3232151271693177312}
   m_Father: {fileID: 0}
@@ -269,6 +270,73 @@ RectTransform:
   m_AnchoredPosition: {x: -79.00043, y: -29.045898}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1503201532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3232151270900073896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0837571b712e5de4db527b0674b2732c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sherwani:
+  - {fileID: 21300000, guid: d3b01114c89005c499412d79a959ceab, type: 3}
+  - {fileID: 21300000, guid: 2cb6775fd0a2882419f7f9c4cd7bd444, type: 3}
+  - {fileID: 21300000, guid: eda8f9a807d17ee438d33f46a912f4d8, type: 3}
+  - {fileID: 21300000, guid: fbc46f822a66ee54cb3410b1c0fde1ca, type: 3}
+  - {fileID: 21300000, guid: d52ca4f5158bc6540be73cacd6080ad3, type: 3}
+  - {fileID: 21300000, guid: 8753da63d73c2ce4facce2ad7c2106d6, type: 3}
+  - {fileID: 21300000, guid: 22f9771ab5031c649839848442ec8fd2, type: 3}
+  - {fileID: 21300000, guid: d4462892608bd794a9752b0913cd2642, type: 3}
+  - {fileID: 21300000, guid: 7fd97f1d8d68e4642bccee58a8c1b638, type: 3}
+  - {fileID: 21300000, guid: 25a515f6f4f4f294c950ee37d074bb63, type: 3}
+  Pants:
+  - {fileID: 21300000, guid: 1c5be9b028152354f9d8bd5a7a713828, type: 3}
+  - {fileID: 21300000, guid: 376c85c97f092cb44b861f375298a458, type: 3}
+  - {fileID: 21300000, guid: 85b10ef22be4204408c265fdb020be81, type: 3}
+  - {fileID: 21300000, guid: 0240c11fdf4caef4db5bb470b0b378f4, type: 3}
+  - {fileID: 21300000, guid: 984de283d2aa2c646a208a48f9a3317e, type: 3}
+  - {fileID: 21300000, guid: c6f8b9e4a08d197449e557816aac2355, type: 3}
+  - {fileID: 21300000, guid: 2c15d1072d1d2b6499db3af33ae3a4e7, type: 3}
+  - {fileID: 21300000, guid: b99271d9f4722534eac808caf069b369, type: 3}
+  - {fileID: 21300000, guid: 5eafa72cb00448349a76e0827e7be852, type: 3}
+  - {fileID: 21300000, guid: 40e7237a656f16840ba7b1b66c514f9b, type: 3}
+  Shoes:
+  - {fileID: 21300000, guid: 6103acf0be2178d44bd7dcefc820bc16, type: 3}
+  - {fileID: 21300000, guid: 0ecc94f0b1ef7b541a3bcd11cdb46b29, type: 3}
+  - {fileID: 21300000, guid: 4ec5d8089b8a4a84f9d9dcf816091f7a, type: 3}
+  - {fileID: 21300000, guid: 96cce08f613b70a4c84333d071eb42a4, type: 3}
+  - {fileID: 21300000, guid: 6f674c64b77f155458afb810b596853c, type: 3}
+  - {fileID: 21300000, guid: e47555f808e250b4a8b1295b12a6cbe6, type: 3}
+  - {fileID: 21300000, guid: 4d9f4904c0d8c8f4b994cabf00d902ff, type: 3}
+  - {fileID: 21300000, guid: b1020d33123c309418289c1ee247e895, type: 3}
+  - {fileID: 21300000, guid: 18f95c9b840a4b84cb3dc9f3b2522565, type: 3}
+  - {fileID: 21300000, guid: d2d3aee2594943b408c444b8a9112eca, type: 3}
+  Turban:
+  - {fileID: 21300000, guid: 425655ec6ddf49141ae6e3d2f45052b3, type: 3}
+  - {fileID: 21300000, guid: 682d5101766acc242b2787b51ff81a2f, type: 3}
+  - {fileID: 21300000, guid: a10cee2dd7c7d414c950c149a3826cbd, type: 3}
+  - {fileID: 21300000, guid: d2e46c8d0255975448de17dcc95d438a, type: 3}
+  - {fileID: 21300000, guid: 38f3c35785071a448ad4426f1ac2489e, type: 3}
+  - {fileID: 21300000, guid: 62ce6de23438af140939f431c611efe0, type: 3}
+  - {fileID: 21300000, guid: 30b6a06d910b5c441be8d03867ce43ae, type: 3}
+  - {fileID: 21300000, guid: 3f0feb63cd3840447ba29788d9f7de40, type: 3}
+  - {fileID: 21300000, guid: 7d6d842b360fe974696bfd1a4846a3fd, type: 3}
+  - {fileID: 21300000, guid: ee152b9029130fe4fa4e9e8c9d0c52bd, type: 3}
+  Cape:
+  - {fileID: 21300000, guid: 5acd5962d0695294dbb8e00beb9532b2, type: 3}
+  - {fileID: 21300000, guid: f402b20fa19ccb749b5555b3200ff6b5, type: 3}
+  - {fileID: 21300000, guid: 7b64ebedb81237447b6b73ddc05fbd3a, type: 3}
+  - {fileID: 21300000, guid: 253b37b2b9089e34eaa0f7531eec1a0b, type: 3}
+  - {fileID: 21300000, guid: 1ceeee18de9f08040a6eb4691197d9ef, type: 3}
+  - {fileID: 21300000, guid: b4c696c9f8b71b24d9bb852c0381289d, type: 3}
+  - {fileID: 21300000, guid: 6b881ab49934ac045a22926a3d287460, type: 3}
+  - {fileID: 21300000, guid: feb2572133c290d4787f57c412cfa078, type: 3}
+  - {fileID: 21300000, guid: 63973ec38ddb1b948831b49a0c98e071, type: 3}
+  - {fileID: 21300000, guid: cd2d8a5a0e2261646864068cda4a9cc5, type: 3}
 --- !u!1 &3232151271637754350
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,7 +368,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3232151270900073897}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

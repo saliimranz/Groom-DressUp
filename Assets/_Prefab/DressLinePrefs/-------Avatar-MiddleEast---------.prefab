@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 6518378668648207958}
   - component: {fileID: 6518378668648207960}
   - component: {fileID: 6518378668648207959}
-  - component: {fileID: 1869088127}
   m_Layer: 5
   m_Name: Shoes
   m_TagString: Untagged
@@ -32,7 +31,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6518378669582161314}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -77,29 +76,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1869088127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6518378668648207957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ffac21ce43e52a48a9a019beda589f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ItemSpawn:
-  - {fileID: 21300000, guid: b42100099b260c042a361b91d612bbd6, type: 3}
-  - {fileID: 21300000, guid: 4f9b2c81164fe064f866f2ce9c72ea16, type: 3}
-  - {fileID: 21300000, guid: 84894ac28809d484ba6169e50f364bc1, type: 3}
-  - {fileID: 21300000, guid: 0059135c8bf803c4daaba64038621617, type: 3}
-  - {fileID: 21300000, guid: 7501c2b7603228e46a73689167d9f244, type: 3}
-  - {fileID: 21300000, guid: 3ce3fc4c27fa917448301b4806d9a7d7, type: 3}
-  - {fileID: 21300000, guid: b6309e1f41684db42bd2f75cd58fcf86, type: 3}
-  - {fileID: 21300000, guid: 9120214943314094e9140b9779f83306, type: 3}
-  - {fileID: 21300000, guid: 775249f7d800c3c4282b790b4d0f3256, type: 3}
-  - {fileID: 21300000, guid: 967c3e45715406a4eabd8ed72c81e886, type: 3}
 --- !u!1 &6518378669582161313
 GameObject:
   m_ObjectHideFlags: 0
@@ -109,13 +85,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6518378669582161314}
+  - component: {fileID: 1075018744}
   m_Layer: 5
   m_Name: -------Avatar-MiddleEast---------
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6518378669582161314
 RectTransform:
   m_ObjectHideFlags: 0
@@ -128,8 +105,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6518378668648207958}
   - {fileID: 6518378669612214149}
+  - {fileID: 6518378668648207958}
   - {fileID: 6518378670474410643}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -139,6 +116,51 @@ RectTransform:
   m_AnchoredPosition: {x: -76.04999, y: -28.045898}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1075018744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6518378669582161313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ffac21ce43e52a48a9a019beda589f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Shoes:
+  - {fileID: 21300000, guid: b42100099b260c042a361b91d612bbd6, type: 3}
+  - {fileID: 21300000, guid: 4f9b2c81164fe064f866f2ce9c72ea16, type: 3}
+  - {fileID: 21300000, guid: 84894ac28809d484ba6169e50f364bc1, type: 3}
+  - {fileID: 21300000, guid: 0059135c8bf803c4daaba64038621617, type: 3}
+  - {fileID: 21300000, guid: 7501c2b7603228e46a73689167d9f244, type: 3}
+  - {fileID: 21300000, guid: 3ce3fc4c27fa917448301b4806d9a7d7, type: 3}
+  - {fileID: 21300000, guid: b6309e1f41684db42bd2f75cd58fcf86, type: 3}
+  - {fileID: 21300000, guid: 9120214943314094e9140b9779f83306, type: 3}
+  - {fileID: 21300000, guid: 775249f7d800c3c4282b790b4d0f3256, type: 3}
+  - {fileID: 21300000, guid: 967c3e45715406a4eabd8ed72c81e886, type: 3}
+  Thawab:
+  - {fileID: 21300000, guid: f550f4f544db31346add237a425eb81e, type: 3}
+  - {fileID: 21300000, guid: d8ea7afc7539f4d468eedb01f18df925, type: 3}
+  - {fileID: 21300000, guid: ae00adb2a496c1042a0a2ffc262f1b1f, type: 3}
+  - {fileID: 21300000, guid: ae00adb2a496c1042a0a2ffc262f1b1f, type: 3}
+  - {fileID: 21300000, guid: fc05e46d11dd8bd44a81be8d70fd8cba, type: 3}
+  - {fileID: 21300000, guid: 4095921436292934b8dde04d85fff8aa, type: 3}
+  - {fileID: 21300000, guid: 134c2b792d81a294198a1dad5fbc1a04, type: 3}
+  - {fileID: 21300000, guid: 4ca1582aefb354946b079582bb33d007, type: 3}
+  - {fileID: 21300000, guid: b0383ee2a3c43f04384d7e2c6b1bde5f, type: 3}
+  - {fileID: 21300000, guid: 3ff20a4956d6b8e4fabfa6fd9a3e0261, type: 3}
+  Keffiyeh:
+  - {fileID: 21300000, guid: 91087202c031cfe49862fdcee45b03a9, type: 3}
+  - {fileID: 21300000, guid: 6172b1d702bc160418f24579bbd0df4a, type: 3}
+  - {fileID: 21300000, guid: 6448106163eab5a41a977d4376988eaa, type: 3}
+  - {fileID: 21300000, guid: c0bdfb6a74f6b404bb3978c15d7b867d, type: 3}
+  - {fileID: 21300000, guid: 01b9a735a70408040b843708eaa9e2ae, type: 3}
+  - {fileID: 21300000, guid: d82a4f18ec4c37544802c96e4e797de9, type: 3}
+  - {fileID: 21300000, guid: ab40a2325e3846b42927cc99a744ef73, type: 3}
+  - {fileID: 21300000, guid: d78509a18af796f448d9ac1014e1ade5, type: 3}
+  - {fileID: 21300000, guid: 729b58e0608dc064dbaeaa587d1f4f9c, type: 3}
+  - {fileID: 21300000, guid: 01da5beea56713f42b7d1dc6e2aa6520, type: 3}
 --- !u!1 &6518378669612214148
 GameObject:
   m_ObjectHideFlags: 0
@@ -170,7 +192,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6518378669582161314}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

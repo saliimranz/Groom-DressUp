@@ -11,6 +11,7 @@ public class LevelSubMenuCloser : MonoBehaviour
     {
         subMenu[SubIndex].SetActive(true);
         activated = SubIndex;
+        MainManager.Instance.ItemSelected = SubIndex;
     } 
     public void DeactivateOthers()
     {
