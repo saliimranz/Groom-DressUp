@@ -6,10 +6,14 @@ using System.IO;
 public class MainManager : MonoBehaviour
 {
     public static MainManager Instance;
+    
     public int SpriteInt;
+    public int MoneyLeft;
+
     public int regionSelect;
     public int itemTransfer;
     public int ItemSelected;
+    public int CoinsRecived;
 
     public void Awake()
     {
@@ -28,12 +32,14 @@ public class MainManager : MonoBehaviour
     class saveData
     {
         public int SpriteInt;
+        public int MoneyLeft;
     }
 
     public void SaveSpriteInt()
     {
         saveData AvatarSprite = new saveData();
         AvatarSprite.SpriteInt = SpriteInt;
+        AvatarSprite.MoneyLeft = MoneyLeft;
 
         string json = JsonUtility.ToJson(AvatarSprite);
 
@@ -49,6 +55,7 @@ public class MainManager : MonoBehaviour
             saveData AvatarSprite = JsonUtility.FromJson<saveData>(json);
 
             SpriteInt = AvatarSprite.SpriteInt;
+            MoneyLeft = AvatarSprite.MoneyLeft;
         }
     }
 }
