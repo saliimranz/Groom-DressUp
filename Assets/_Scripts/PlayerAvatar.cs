@@ -7,10 +7,14 @@ public class PlayerAvatar : MonoBehaviour
 {
     public Sprite[] playerAva;
     private Image image;
+    public Image OppImage;
+    public Sprite[] OppAva;
+
     // Start is called before the first frame update
     void Start()
     {
         image = GetComponent<Image>();
         image.sprite = playerAva[MainManager.Instance.SpriteInt];
+        OppImage.sprite = OppAva[MainManager.Instance.OppSelected];
     }
 }

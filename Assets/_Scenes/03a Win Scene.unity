@@ -1030,7 +1030,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1427501053
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1283,6 +1283,8 @@ GameObject:
   - component: {fileID: 1668889274}
   - component: {fileID: 1668889276}
   - component: {fileID: 1668889275}
+  - component: {fileID: 1668889277}
+  - component: {fileID: 1668889278}
   m_Layer: 5
   m_Name: TresureBox-Image
   m_TagString: Untagged
@@ -1330,7 +1332,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e33fc33b939fbeb4db200d5d0a39e9f7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 299a8063d476a364d82a595d054ff71e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1348,6 +1350,40 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1668889273}
   m_CullTransparentMesh: 1
+--- !u!95 &1668889277
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668889273}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bacda63466e24884780a5408dfe4b1ca, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1668889278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668889273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e0aef0b0681f054284912c90ff0c75c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openTres: {fileID: 21300000, guid: e33fc33b939fbeb4db200d5d0a39e9f7, type: 3}
+  coins: {fileID: 1427501052}
 --- !u!1 &1686516531
 GameObject:
   m_ObjectHideFlags: 0
@@ -1364,7 +1400,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1686516532
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1610,50 +1646,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1702504137}
   m_CullTransparentMesh: 1
---- !u!1 &1941648264
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1941648266}
-  - component: {fileID: 1941648265}
-  m_Layer: 0
-  m_Name: TEST
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1941648265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1941648264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb7e57d58ad3d334d9a55e057c194e32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1941648266
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1941648264}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 494.53918, y: 908.8562, z: -19.54635}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2120012921
 GameObject:
   m_ObjectHideFlags: 0
@@ -1753,3 +1745,5 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 1d6e5b1d87c6e4840badfa3427b09708, type: 3}
   - {fileID: 21300000, guid: df4d4e522fd7e4445b55710e6ffe8b8e, type: 3}
   - {fileID: 21300000, guid: 1d421cddaf35e5c4b8235b2b712aca3d, type: 3}
+  OppImage: {fileID: 0}
+  OppAva: []

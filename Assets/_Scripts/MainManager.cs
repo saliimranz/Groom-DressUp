@@ -9,6 +9,7 @@ public class MainManager : MonoBehaviour
     
     public int SpriteInt;
     public int MoneyLeft;
+    public int OppSelected;
 
     public int regionSelect;
     public int itemTransfer;

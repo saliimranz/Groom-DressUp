@@ -15,5 +15,10 @@ public class MoneyLeft : MonoBehaviour
         MoneyInt = MainManager.Instance.MoneyLeft;
         Money.text = MoneyInt.ToString();
     }
+    void Update()
+    {
+        MoneyInt = MainManager.Instance.MoneyLeft;
+        Money.text = MoneyInt.ToString();
+    }
 
 }
