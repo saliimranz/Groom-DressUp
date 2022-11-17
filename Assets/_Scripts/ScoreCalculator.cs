@@ -7,7 +7,11 @@ public class ScoreCalculator : MonoBehaviour
 {
     public GameObject winner;
     public GameObject loser;
+    private GameObject Compare;
+    private GameObject vsText;
+
     public LevelManager levelManager;
+    private Animator PlayerAvaBackAnim; 
 
     public Text PlayerScore;
     public Text OpponentScore;
@@ -29,7 +33,13 @@ public class ScoreCalculator : MonoBehaviour
     
     void Start()
     {
+        Compare = GameObject.Find("Compare-Empty");
+        vsText = GameObject.Find("VSText-Image");
+
         levelManager = GameObject.FindObjectOfType<LevelManager>();
+        PlayerAvaBackAnim = GameObject.Find("Avatar-To-Dress").GetComponent<Animator>();
+        
+
     }
     public void P_ScoreCal()
     {
@@ -60,6 +70,10 @@ public class ScoreCalculator : MonoBehaviour
     {
         p_avg = p_Sum / 3;
         Opp_avg = Opp_Sum / 3;
+        if(p_avg == Opp_avg)
+        {
+            p_avg += 1;
+        }
         PlayerScore.text = (p_avg).ToString();
         OpponentScore.text = (Opp_avg).ToString();
         TypeOfScore.text = ("Final").ToString();
@@ -68,6 +82,14 @@ public class ScoreCalculator : MonoBehaviour
         p_Slider.value = p_avg;
         Opp_ScoreProfile.text = ("Score: " + Opp_avg).ToString();
         Opp_Slider.value = Opp_avg;
+    }
+
+    public void ActivateBackAnim()
+    {
+        PlayerAvaBackAnim.SetTrigger("GoBack_Trig");
+        Compare.SetActive(false);
+        vsText.SetActive(false);
+
     }
 
     public void Decision()
