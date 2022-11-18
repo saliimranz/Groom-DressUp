@@ -3,16 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerAvatar : MonoBehaviour
+public class RandomSelector : MonoBehaviour
 {
-    public Sprite[] playerAva;
     private Image image;
-
-
+    public Sprite[] spriteArray;
+    int rand;
     // Start is called before the first frame update
     void Start()
     {
         image = GetComponent<Image>();
-        image.sprite = playerAva[MainManager.Instance.SpriteInt];
+        rand = Random.Range(0, spriteArray.Length - 1);
+        image.sprite = spriteArray[rand];
+        image.SetNativeSize();    
     }
+
 }

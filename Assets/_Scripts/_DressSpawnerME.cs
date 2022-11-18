@@ -13,14 +13,10 @@ public class _DressSpawnerME : MonoBehaviour
         public Sprite[] Thawab;
         public Sprite[] Keffiyeh; 
 
-
-
     private Image image;
-    int price = 1000;
 
     void Start()
     {
-        //image = GetComponent<Image>();
         arrayList.Add(Thawab);
         arrayList.Add(Shoes);
         arrayList.Add(Keffiyeh);
@@ -31,21 +27,29 @@ public class _DressSpawnerME : MonoBehaviour
        
         if (paid)
         {
-            if(price > MainManager.Instance.MoneyLeft)
+            if (MainManager.Instance.MEastArray[MainManager.Instance.ItemSelected, MainManager.Instance.itemTransfer - 5] == true)
+            {
+                goto Continue;
+            }
+            Button btn = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.GetComponent<Button>();
+            GameObject PriceBar = btn.transform.GetChild(1).gameObject;
+            Text stringPrice = PriceBar.transform.GetChild(0).GetComponent<Text>();
+            int  price = int.Parse(stringPrice.text);
+
+            if (price > MainManager.Instance.MoneyLeft)
             {
                 return;
             }
             else if(price <= MainManager.Instance.MoneyLeft)
             {
-                Button btn = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.GetComponent<Button>();
-                GameObject PriceBar = btn.transform.GetChild(1).gameObject;
-                Text stringPrice = PriceBar.transform.GetChild(0).GetComponent<Text>();
-                price = int.Parse(stringPrice.text);
                 MainManager.Instance.MoneyLeft -= price;
                 btn.transform.GetChild(1).gameObject.SetActive(false);
+
+                MainManager.Instance.MEastArray[MainManager.Instance.ItemSelected, MainManager.Instance.itemTransfer - 5] = true;
+                MainManager.Instance.SaveSpriteInt();
             }
         }
-
+        Continue:
         arraySelected = MainManager.Instance.ItemSelected;
         image = gameObject.transform.GetChild(arraySelected).GetComponent<Image>();
 

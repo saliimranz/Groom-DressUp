@@ -30,24 +30,6 @@ public class LevelSubMenuCloser : MonoBehaviour
         }
     }
 
-    public void PaidItems()
-    {
-        btn =  UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.GetComponent<Button>();
-        Debug.Log(MoneyLeft);
-        if (price <= MoneyLeft)
-        {
-            btn.interactable = true;
-            MoneyLeft -= price;
-            Debug.Log(MoneyLeft);
-            btn.transform.GetChild(1).gameObject.SetActive(false);
-        }
-        else
-        {
-            btn.enabled = false;
-            return;
-        }
-    }
-
     public void SendItemNum(int ItemToSpawn)
     {
         MainManager.Instance.itemTransfer = ItemToSpawn;

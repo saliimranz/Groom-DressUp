@@ -101,7 +101,7 @@ public class ScoreCalculator : MonoBehaviour
         if (p_avg >= Opp_avg)
         {
             winner.SetActive(true);
-            yield return new WaitForSeconds(3.5f);
+            yield return new WaitForSeconds(5f);
             levelManager.LoadLevel("03a Win Scene");
             coinsRecived = Random.Range(100, 500);
             MainManager.Instance.CoinsRecived = coinsRecived;

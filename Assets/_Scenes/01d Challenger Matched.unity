@@ -1139,6 +1139,7 @@ GameObject:
   - component: {fileID: 2104663348}
   - component: {fileID: 2104663350}
   - component: {fileID: 2104663349}
+  - component: {fileID: 2104663351}
   m_Layer: 5
   m_Name: Opponent-Panel
   m_TagString: Untagged
@@ -1205,6 +1206,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2104663347}
   m_CullTransparentMesh: 1
+--- !u!114 &2104663351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104663347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cf8b94e9864ce44fbf3f98e7d5d29ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OppImage: {fileID: 2104663349}
+  OppAva:
+  - {fileID: 21300000, guid: a6da1b304b035ad46939ad1b4fc2a7b0, type: 3}
+  - {fileID: 21300000, guid: 893f58dd0d63f3d4cb57a89bec7a8f40, type: 3}
+  - {fileID: 21300000, guid: edc4b10afb68cc1478c5a64c5f4b92a2, type: 3}
+  - {fileID: 21300000, guid: e634919bb6311834daf594b40c56c42f, type: 3}
+  - {fileID: 21300000, guid: a4f05990d9e9f4f45b023ab24fb9f9b2, type: 3}
+  - {fileID: 21300000, guid: 8401620c7630a0340bb66baa6ced9c14, type: 3}
+  - {fileID: 21300000, guid: 22c288931597f9448b28af19fd8f19cf, type: 3}
+  - {fileID: 21300000, guid: 1384d935a92e80f4f82f93720590224d, type: 3}
 --- !u!1 &2120012921
 GameObject:
   m_ObjectHideFlags: 0
@@ -1304,13 +1327,3 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f44206029d3ab82448eab88427a31b9c, type: 3}
   - {fileID: 21300000, guid: c4db4b8c02f2ca54ea612315ba9d4daf, type: 3}
   - {fileID: 21300000, guid: c4ac66e9476f7ed4797e7ca8a39ee491, type: 3}
-  OppImage: {fileID: 2104663349}
-  OppAva:
-  - {fileID: 21300000, guid: 91769b7991072e6409f6ba243f212d2f, type: 3}
-  - {fileID: 21300000, guid: 8c4741b63ea594e4b95abfc910620caf, type: 3}
-  - {fileID: 21300000, guid: 9af33c6701ce5d048bb3a0aa56b747b9, type: 3}
-  - {fileID: 21300000, guid: 5ae4cec001b71094492c4c5033b89455, type: 3}
-  - {fileID: 21300000, guid: c680cf10e5ffc814aafb81291cae29b7, type: 3}
-  - {fileID: 21300000, guid: 8ef5f74a7bf9e784c9db1df655c61666, type: 3}
-  - {fileID: 21300000, guid: 2d9d4f3cf922b9641ac37231e0e33724, type: 3}
-  - {fileID: 21300000, guid: 345ae2f74bc03da4daf5eac66fa6eeca, type: 3}
