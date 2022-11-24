@@ -27,10 +27,29 @@ public class _DressSpawnerME : MonoBehaviour
        
         if (paid)
         {
-            if (MainManager.Instance.MEastArray[MainManager.Instance.ItemSelected, MainManager.Instance.itemTransfer - 5] == true)
+            //-----------------------Checking Item Type and bool----------------------------------------
+            if(MainManager.Instance.ItemSelected == 0)
             {
-                goto Continue;
+                if (MainManager.Instance.allDress[MainManager.Instance.itemTransfer - 5] == true)
+                {
+                    goto Continue;
+                }
             }
+            else if(MainManager.Instance.ItemSelected == 1)
+            {
+                if (MainManager.Instance.allShoes[MainManager.Instance.itemTransfer - 5] == true)
+                {
+                    goto Continue;
+                }
+            }
+            else if(MainManager.Instance.ItemSelected == 2)
+            {
+                if (MainManager.Instance.allHead[MainManager.Instance.itemTransfer - 5] == true)
+                {
+                    goto Continue;
+                }
+            }
+            //---------------------Getting Button Details-------------------------------------------------
             Button btn = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.GetComponent<Button>();
             GameObject PriceBar = btn.transform.GetChild(1).gameObject;
             Text stringPrice = PriceBar.transform.GetChild(0).GetComponent<Text>();
@@ -45,7 +64,7 @@ public class _DressSpawnerME : MonoBehaviour
                 MainManager.Instance.MoneyLeft -= price;
                 btn.transform.GetChild(1).gameObject.SetActive(false);
 
-                MainManager.Instance.MEastArray[MainManager.Instance.ItemSelected, MainManager.Instance.itemTransfer - 5] = true;
+                setMainBool();
                 MainManager.Instance.SaveSpriteInt();
             }
         }
@@ -54,5 +73,21 @@ public class _DressSpawnerME : MonoBehaviour
         image = gameObject.transform.GetChild(arraySelected).GetComponent<Image>();
 
         image.sprite = arrayList[arraySelected][MainManager.Instance.itemTransfer];
+    }
+
+    public void setMainBool()
+    {
+        if(MainManager.Instance.ItemSelected == 0)
+        {
+            MainManager.Instance.allDress[MainManager.Instance.itemTransfer - 5] = true;
+        }
+        else if (MainManager.Instance.ItemSelected == 1)
+        {
+            MainManager.Instance.allShoes[MainManager.Instance.itemTransfer - 5] = true;
+        }
+        else if (MainManager.Instance.ItemSelected == 2)
+        {
+            MainManager.Instance.allHead[MainManager.Instance.itemTransfer - 5] = true;
+        }
     }
 }

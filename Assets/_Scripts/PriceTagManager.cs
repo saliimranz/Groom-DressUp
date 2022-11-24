@@ -1,16 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class ThisSceneManager : MonoBehaviour
+public class PriceTagManager : MonoBehaviour
 {
-
-    private Sprite priceTag;
+    private GameObject tag;
     // Start is called before the first frame update
     void Start()
     {
-        priceTag = GetComponent<Sprite>();
         
     }
 
@@ -18,5 +15,11 @@ public class ThisSceneManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void AlreadyBought()
+    {
+        tag = transform.GetChild(5).gameObject;
+        tag.SetActive(false);
     }
 }

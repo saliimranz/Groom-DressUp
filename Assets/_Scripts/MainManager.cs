@@ -16,7 +16,18 @@ public class MainManager : MonoBehaviour
     public int ItemSelected;
     public int CoinsRecived;
 
-    public bool[,] MEastArray = new bool[3, 3];
+    public bool[] allDress = new bool[9];  //1st three ME -> W -> SA
+    public bool[] allShoes = new bool[9];
+    public bool[] allHead = new bool[9];
+
+    public bool[] allPants = new bool[6];
+
+    //----Western Remaining
+    public bool[] WestTie = new bool[3]; 
+    public bool[] WestCoat = new bool[3];
+    //----SAsia Remaining
+    public bool[] SA_cape = new bool[3];
+
     public bool[,] WestArray = new bool[6,3];
     public bool[,] SAsiaArray = new bool[5,3];
     
@@ -39,9 +50,17 @@ public class MainManager : MonoBehaviour
     {
         public int SpriteInt;
         public int MoneyLeft;
-        public bool[,] MEastArray = new bool[3, 3];
-        public bool[,] WestArray = new bool[6, 3];
-        public bool[,] SAsiaArray = new bool[5, 3];
+        public bool[] allDress = new bool[9];  //1st three ME -> W -> SA
+        public bool[] allShoes = new bool[9];
+        public bool[] allHead = new bool[9];
+
+        public bool[] allPants = new bool[6];
+        //----Western Remaining
+        public bool[] WestTie = new bool[3];
+        public bool[] WestCoat = new bool[3];
+        //----SAsia Remaining
+        public bool[] SA_cape = new bool[3];
+
     }
 
     public void SaveSpriteInt()
@@ -49,33 +68,40 @@ public class MainManager : MonoBehaviour
         saveData AvatarSprite = new saveData();
         AvatarSprite.SpriteInt = SpriteInt;
         AvatarSprite.MoneyLeft = MoneyLeft;
-        
-        
-        for (int i = 0; i < AvatarSprite.MEastArray.GetLength(0); i++)
+        // ------------ saving bool array ------------
+        for(int i = 0; i < allDress.Length; i++)
         {
-            for (int j = 0; j < AvatarSprite.MEastArray.GetLength(1); j++)
-            {
-                AvatarSprite.MEastArray[i, j] = MEastArray[i, j];
-                Debug.Log(AvatarSprite.MEastArray[i, j] + " ----> saved in json---> " + MEastArray[i, j]);
-            }
+            AvatarSprite.allDress[i] = allDress[i];
         }
-       
+        for (int i = 0; i < allShoes.Length; i++)
+        {
+            AvatarSprite.allShoes[i] = allShoes[i];
+        }
+        for (int i = 0; i < allHead.Length; i++)
+        {
+            AvatarSprite.allHead[i] = allHead[i];
+        }
+        for (int i = 0; i < allPants.Length; i++)
+        {
+            AvatarSprite.allPants[i] = allPants[i];
+        }
 
-        for (int i = 0; i < AvatarSprite.WestArray.GetLength(0); i++)
+        //remaining west
+        for (int i = 0; i < WestTie.Length; i++)
         {
-            for (int j = 0; j < AvatarSprite.WestArray.GetLength(1); j++)
-            {
-                AvatarSprite.WestArray[i, j] = WestArray[i, j];
-            }
+            AvatarSprite.WestTie[i] = WestTie[i];
         }
-        
-        for (int i = 0; i < AvatarSprite.SAsiaArray.GetLength(0); i++)
+        for (int i = 0; i < WestCoat.Length; i++)
         {
-            for (int j = 0; j < AvatarSprite.SAsiaArray.GetLength(1); j++)
-            {
-                AvatarSprite.SAsiaArray[i, j] = SAsiaArray[i, j];
-            }
+            AvatarSprite.WestCoat[i] = WestCoat[i];
         }
+
+        // remaing SA
+        for (int i = 0; i < SA_cape.Length; i++)
+        {
+            AvatarSprite.SA_cape[i] = SA_cape[i];
+        }
+        //--------------------------------------------
 
         string json = JsonUtility.ToJson(AvatarSprite);
 
@@ -93,34 +119,40 @@ public class MainManager : MonoBehaviour
             SpriteInt = AvatarSprite.SpriteInt;
             MoneyLeft = AvatarSprite.MoneyLeft;
 
-            for (int i = 0; i < MEastArray.GetLength(0); i++)
-            {
-              
-                for (int j = 0; j < MEastArray.GetLength(1); j++)
-                {
-                    Debug.Log(MEastArray.GetLength(1));
-                    MEastArray[i, j] = AvatarSprite.MEastArray[i, j];
 
-                    Debug.Log(MEastArray[i, j] +"----> getting from saved----> " + AvatarSprite.MEastArray[i, j]);
-                }
+            // ------------ saving bool array ------------
+            for (int i = 0; i < allDress.Length; i++)
+            {
+                allDress[i] = AvatarSprite.allDress[i] ;
+            }
+            for (int i = 0; i < allShoes.Length; i++)
+            {
+                allShoes[i] = AvatarSprite.allShoes[i];
+            }
+            for (int i = 0; i < allHead.Length; i++)
+            {
+                allHead[i] = AvatarSprite.allHead[i];
+            }
+            for (int i = 0; i < allPants.Length; i++)
+            {
+                allPants[i] = AvatarSprite.allPants[i];
+            }
+            //remaining west
+            for (int i = 0; i < WestTie.Length; i++)
+            {
+                WestTie[i] = AvatarSprite.WestTie[i];
+            }
+            for (int i = 0; i < WestCoat.Length; i++)
+            {
+                WestCoat[i] = AvatarSprite.WestCoat[i];
             }
 
-
-            for (int i = 0; i < WestArray.GetLength(0); i++)
+            // remaing SA
+            for (int i = 0; i < SA_cape.Length; i++)
             {
-                for (int j = 0; j < WestArray.GetLength(1); j++)
-                {
-                    WestArray[i, j] = AvatarSprite.WestArray[i, j];  
-                }
+                SA_cape[i] = AvatarSprite.SA_cape[i];
             }
-
-            for (int i = 0; i < SAsiaArray.GetLength(0); i++)
-            {
-                for (int j = 0; j < SAsiaArray.GetLength(1); j++)
-                {
-                    SAsiaArray[i, j] = AvatarSprite.SAsiaArray[i, j];
-                }
-            }
+            //--------------------------------------------
         }
     }
 }

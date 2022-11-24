@@ -4025,7 +4025,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1184237070
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5274,10 +5274,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpriteInt: 0
   MoneyLeft: 0
+  OppSelected: 0
   regionSelect: 0
   itemTransfer: 0
   ItemSelected: 0
   CoinsRecived: 0
+  allDress: 000000000000000000
+  allShoes: 000000000000000000
+  allHead: 000000000000000000
+  allPants: 000000000000
 --- !u!4 &1480034224
 Transform:
   m_ObjectHideFlags: 0
@@ -6993,7 +6998,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2136346309
 MonoBehaviour:
   m_ObjectHideFlags: 0

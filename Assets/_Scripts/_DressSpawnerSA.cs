@@ -29,11 +29,44 @@ public class _DressSpawnerSA : MonoBehaviour
     {
         if (paid)
         {
-
-            if (MainManager.Instance.SAsiaArray[MainManager.Instance.ItemSelected, MainManager.Instance.itemTransfer - 5] == true)
+            //-----------------------Checking Item Type and bool----------------------------------------
+            if (MainManager.Instance.ItemSelected == 0)
             {
-                goto Continue;
+                if (MainManager.Instance.allPants[MainManager.Instance.itemTransfer-2] == true)
+                {
+                    goto Continue;
+                }
             }
+            else if (MainManager.Instance.ItemSelected == 1)
+            {
+                if (MainManager.Instance.allDress[MainManager.Instance.itemTransfer] == true)
+                {
+                    goto Continue;
+                }
+            }
+            else if (MainManager.Instance.ItemSelected == 2)
+            {
+                if (MainManager.Instance.allShoes[MainManager.Instance.itemTransfer] == true)
+                {
+                    goto Continue;
+                }
+            }
+            else if (MainManager.Instance.ItemSelected == 3)
+            {
+                if (MainManager.Instance.allHead[MainManager.Instance.itemTransfer] == true)
+                {
+                    goto Continue;
+                }
+            }
+            else if (MainManager.Instance.ItemSelected == 4)
+            {
+                if (MainManager.Instance.SA_cape[MainManager.Instance.itemTransfer] == true)
+                {
+                    goto Continue;
+                }
+            }
+
+            //---------------------Getting Button Details-------------------------------------------------
 
             Button btn = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.GetComponent<Button>();
             GameObject PriceBar = btn.transform.GetChild(1).gameObject;
@@ -49,7 +82,7 @@ public class _DressSpawnerSA : MonoBehaviour
                 MainManager.Instance.MoneyLeft -= price;
                 btn.transform.GetChild(1).gameObject.SetActive(false);
 
-                MainManager.Instance.SAsiaArray[MainManager.Instance.ItemSelected, MainManager.Instance.itemTransfer - 5] = true;
+                setMainBool();
                 MainManager.Instance.SaveSpriteInt();
             }
         }
@@ -59,5 +92,29 @@ public class _DressSpawnerSA : MonoBehaviour
         image = gameObject.transform.GetChild(arraySelected).GetComponent<Image>();
 
         image.sprite = arrayList[arraySelected][MainManager.Instance.itemTransfer];
+    }
+
+    public void setMainBool()
+    {
+        if (MainManager.Instance.ItemSelected == 0)
+        {
+            MainManager.Instance.allPants[MainManager.Instance.itemTransfer - 2] = true;
+        }
+        else if (MainManager.Instance.ItemSelected == 1)
+        {
+            MainManager.Instance.allDress[MainManager.Instance.itemTransfer] = true;
+        }
+        else if (MainManager.Instance.ItemSelected == 2)
+        {
+            MainManager.Instance.allShoes[MainManager.Instance.itemTransfer] = true;
+        }
+        else if (MainManager.Instance.ItemSelected == 3)
+        {
+            MainManager.Instance.allHead[MainManager.Instance.itemTransfer] = true;
+        }
+        else if (MainManager.Instance.ItemSelected == 4)
+        {
+            MainManager.Instance.SA_cape[MainManager.Instance.itemTransfer] = true;
+        }
     }
 }
