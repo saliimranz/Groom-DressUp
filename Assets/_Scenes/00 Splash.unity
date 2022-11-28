@@ -690,6 +690,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Load Sound
       objectReference: {fileID: 0}
+    - target: {fileID: 3693445947597373444, guid: 47ffd3e1086ff7940bc4878b718b317f, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3693445947597373445, guid: 47ffd3e1086ff7940bc4878b718b317f, type: 3}
       propertyPath: m_RootOrder
       value: 3

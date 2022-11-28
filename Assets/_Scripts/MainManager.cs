@@ -7,9 +7,10 @@ public class MainManager : MonoBehaviour
 {
     public static MainManager Instance;
 
-    public bool audioBool;
-    public int SpriteInt;
-    public int MoneyLeft;
+    public bool audioBool = true;
+
+    public int SpriteInt ;
+    public int MoneyLeft = 999999;
     public int OppSelected;
 
     public int regionSelect;
@@ -28,11 +29,6 @@ public class MainManager : MonoBehaviour
     public bool[] WestCoat = new bool[3];
     //----SAsia Remaining
     public bool[] SA_cape = new bool[3];
-    
-    public void soundController(bool situ)
-    {
-        audioBool = situ;
-    }
 
     public void Awake()
     {
@@ -45,6 +41,7 @@ public class MainManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         LoadSpriteInt();
+
     }
 
     [System.Serializable]

@@ -1748,6 +1748,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 425168159}
+  - component: {fileID: 425168160}
   m_Layer: 0
   m_Name: SoundControlles
   m_TagString: Untagged
@@ -1772,6 +1773,18 @@ Transform:
   m_Father: {fileID: 1136675796}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &425168160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425168158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d155b1615c11d9845be55755d4fe657c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &470987689
 GameObject:
   m_ObjectHideFlags: 0
@@ -4091,8 +4104,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1480034223}
-        m_TargetAssemblyTypeName: MainManager, Assembly-CSharp
+      - m_Target: {fileID: 425168160}
+        m_TargetAssemblyTypeName: SoundMAnager, Assembly-CSharp
         m_MethodName: soundController
         m_Mode: 6
         m_Arguments:
@@ -4102,30 +4115,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 2136346308}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1184237069}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1184237072
 MonoBehaviour:
@@ -5243,65 +5232,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1479500727}
   m_CullTransparentMesh: 1
---- !u!1 &1480034222
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1480034224}
-  - component: {fileID: 1480034223}
-  m_Layer: 0
-  m_Name: MainManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1480034223
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1480034222}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ada3876741aba24a8886955a4704422, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audio: 0
-  SpriteInt: 0
-  MoneyLeft: 0
-  OppSelected: 0
-  regionSelect: 0
-  itemTransfer: 0
-  ItemSelected: 0
-  CoinsRecived: 0
-  allDress: 000000000000000000
-  allShoes: 000000000000000000
-  allHead: 000000000000000000
-  allPants: 000000000000
-  WestTie: 000000
-  WestCoat: 000000
-  SA_cape: 000000
---- !u!4 &1480034224
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1480034222}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 521.3024, y: 1103.2778, z: -17.67167}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1530271516
 GameObject:
   m_ObjectHideFlags: 0
@@ -7002,7 +6932,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2136346309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7047,33 +6977,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1480034223}
-        m_TargetAssemblyTypeName: MainManager, Assembly-CSharp
+      - m_Target: {fileID: 425168160}
+        m_TargetAssemblyTypeName: SoundMAnager, Assembly-CSharp
         m_MethodName: soundController
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1184237069}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 2136346308}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7279,3 +7185,64 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b8575ab222b2b54b94d8d588e6089a2, type: 3}
+--- !u!1001 &5979022981691417233
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5979022982363391265, guid: 8f362ee05a909f34bbd4eabdb081691d, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979022982363391265, guid: 8f362ee05a909f34bbd4eabdb081691d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 521.3024
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979022982363391265, guid: 8f362ee05a909f34bbd4eabdb081691d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1103.2778
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979022982363391265, guid: 8f362ee05a909f34bbd4eabdb081691d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -17.67167
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979022982363391265, guid: 8f362ee05a909f34bbd4eabdb081691d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979022982363391265, guid: 8f362ee05a909f34bbd4eabdb081691d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979022982363391265, guid: 8f362ee05a909f34bbd4eabdb081691d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979022982363391265, guid: 8f362ee05a909f34bbd4eabdb081691d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979022982363391265, guid: 8f362ee05a909f34bbd4eabdb081691d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979022982363391265, guid: 8f362ee05a909f34bbd4eabdb081691d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979022982363391265, guid: 8f362ee05a909f34bbd4eabdb081691d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979022982363391294, guid: 8f362ee05a909f34bbd4eabdb081691d, type: 3}
+      propertyPath: audioBool
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979022982363391295, guid: 8f362ee05a909f34bbd4eabdb081691d, type: 3}
+      propertyPath: m_Name
+      value: MainManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8f362ee05a909f34bbd4eabdb081691d, type: 3}

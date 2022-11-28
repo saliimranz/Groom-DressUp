@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayAudio : MonoBehaviour
 {
+    public static bool audioController = true;
     // Start is called before the first frame update
     public PlayAudio instance;
     public AudioSource audioSource;
@@ -20,10 +21,22 @@ public class PlayAudio : MonoBehaviour
             instance = this;
         }
     }
-        void Start()
+    void Start()
     {
         DontDestroyOnLoad(gameObject);
-        if(MainManager.Instance.GetComponent<AudioSource>())
-            audioSource.Play();
+        audioSource.Play();     
+    }
+
+    public void MuteOrNot()
+    {
+        if (MainManager.Instance.audioBool)
+        {
+            audioSource.mute = false;
+
+        }
+        else if (!MainManager.Instance.audioBool)
+        {
+            audioSource.mute = true;
+        }
     }
 }
