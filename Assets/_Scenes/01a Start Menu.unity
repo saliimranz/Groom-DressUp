@@ -4091,9 +4091,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
+      - m_Target: {fileID: 1480034223}
+        m_TargetAssemblyTypeName: MainManager, Assembly-CSharp
+        m_MethodName: soundController
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4101,7 +4101,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 2136346308}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -5272,6 +5272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ada3876741aba24a8886955a4704422, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audio: 0
   SpriteInt: 0
   MoneyLeft: 0
   OppSelected: 0
@@ -5283,6 +5284,9 @@ MonoBehaviour:
   allShoes: 000000000000000000
   allHead: 000000000000000000
   allPants: 000000000000
+  WestTie: 000000
+  WestCoat: 000000
+  SA_cape: 000000
 --- !u!4 &1480034224
 Transform:
   m_ObjectHideFlags: 0
@@ -7043,9 +7047,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
+      - m_Target: {fileID: 1480034223}
+        m_TargetAssemblyTypeName: MainManager, Assembly-CSharp
+        m_MethodName: soundController
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7053,7 +7057,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1184237069}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine

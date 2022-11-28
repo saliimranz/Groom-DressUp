@@ -7,6 +7,7 @@ public class MainManager : MonoBehaviour
 {
     public static MainManager Instance;
 
+    public bool audioBool;
     public int SpriteInt;
     public int MoneyLeft;
     public int OppSelected;
@@ -27,10 +28,11 @@ public class MainManager : MonoBehaviour
     public bool[] WestCoat = new bool[3];
     //----SAsia Remaining
     public bool[] SA_cape = new bool[3];
-
-    public bool[,] WestArray = new bool[6,3];
-    public bool[,] SAsiaArray = new bool[5,3];
     
+    public void soundController(bool situ)
+    {
+        audioBool = situ;
+    }
 
     public void Awake()
     {

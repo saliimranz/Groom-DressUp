@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class _DressSpawnerME : MonoBehaviour
 {
@@ -50,7 +51,7 @@ public class _DressSpawnerME : MonoBehaviour
                 }
             }
             //---------------------Getting Button Details-------------------------------------------------
-            Button btn = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.GetComponent<Button>();
+            Button btn = EventSystem.current.currentSelectedGameObject.GetComponent<Button>();
             GameObject PriceBar = btn.transform.GetChild(1).gameObject;
             Text stringPrice = PriceBar.transform.GetChild(0).GetComponent<Text>();
             int  price = int.Parse(stringPrice.text);

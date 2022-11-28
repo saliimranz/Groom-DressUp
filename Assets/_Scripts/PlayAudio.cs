@@ -23,6 +23,7 @@ public class PlayAudio : MonoBehaviour
         void Start()
     {
         DontDestroyOnLoad(gameObject);
-        audioSource.Play();
+        if(MainManager.Instance.GetComponent<AudioSource>())
+            audioSource.Play();
     }
 }
