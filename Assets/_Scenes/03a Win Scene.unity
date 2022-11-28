@@ -1191,7 +1191,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2800845607282956095, guid: 2b8575ab222b2b54b94d8d588e6089a2, type: 3}
       propertyPath: autoLoadNextLevelAfter
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b8575ab222b2b54b94d8d588e6089a2, type: 3}
@@ -1745,5 +1745,3 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 1d6e5b1d87c6e4840badfa3427b09708, type: 3}
   - {fileID: 21300000, guid: df4d4e522fd7e4445b55710e6ffe8b8e, type: 3}
   - {fileID: 21300000, guid: 1d421cddaf35e5c4b8235b2b712aca3d, type: 3}
-  OppImage: {fileID: 0}
-  OppAva: []

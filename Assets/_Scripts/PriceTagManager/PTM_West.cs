@@ -50,7 +50,7 @@ public class PTM_West : MonoBehaviour
         for (int i = 0; i < Hairs.Length; i++)
         {
             if (MainManager.Instance.allHead[i+3] == true)
-                Hairs[i+3].transform.GetChild(1).gameObject.SetActive(false);
+                Hairs[i].transform.GetChild(1).gameObject.SetActive(false);
         }
     }
 

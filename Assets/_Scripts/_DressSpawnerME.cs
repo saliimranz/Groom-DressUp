@@ -8,9 +8,11 @@ public class _DressSpawnerME : MonoBehaviour
 {
 
     List<Sprite[]> arrayList = new List<Sprite[]>();
-    int arraySelected; 
+    int arraySelected;
+    bool submitActivate;
+    public GameObject submitButton;
 
-        public Sprite[] Shoes;
+    public Sprite[] Shoes;
         public Sprite[] Thawab;
         public Sprite[] Keffiyeh; 
 
@@ -21,6 +23,11 @@ public class _DressSpawnerME : MonoBehaviour
         arrayList.Add(Thawab);
         arrayList.Add(Shoes);
         arrayList.Add(Keffiyeh);
+    }
+    private void Update()
+    {
+        if (!submitActivate)
+            submitButton.SetActive(false);
     }
 
     public void ApplyOnClick(bool paid)
@@ -74,6 +81,7 @@ public class _DressSpawnerME : MonoBehaviour
         image = gameObject.transform.GetChild(arraySelected).GetComponent<Image>();
 
         image.sprite = arrayList[arraySelected][MainManager.Instance.itemTransfer];
+        submitActivate = true;
     }
 
     public void setMainBool()

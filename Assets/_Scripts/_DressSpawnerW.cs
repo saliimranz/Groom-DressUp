@@ -7,6 +7,8 @@ public class _DressSpawnerW : MonoBehaviour
 {
     List<Sprite[]> arrayList = new List<Sprite[]>();
     int arraySelected;
+    bool submitActivate;
+    public GameObject submitButton;
 
     public Sprite[] Shirt;
     public Sprite[] Pant;
@@ -25,6 +27,11 @@ public class _DressSpawnerW : MonoBehaviour
         arrayList.Add(Hair);
         arrayList.Add(Tie);
         arrayList.Add(Coat);
+    }
+    private void Update()
+    {
+        if (!submitActivate)
+            submitButton.SetActive(false);
     }
     public void ApplyOnClick(bool paid)
     {
@@ -101,6 +108,7 @@ public class _DressSpawnerW : MonoBehaviour
         image = gameObject.transform.GetChild(arraySelected).GetComponent<Image>();
 
         image.sprite = arrayList[arraySelected][MainManager.Instance.itemTransfer];
+        submitActivate = true;
     }
 
     public void setMainBool()

@@ -10,7 +10,7 @@ public class MainManager : MonoBehaviour
     public bool audioBool = true;
 
     public int SpriteInt ;
-    public int MoneyLeft = 999999;
+    public int MoneyLeft;
     public int OppSelected;
 
     public int regionSelect;
@@ -39,7 +39,6 @@ public class MainManager : MonoBehaviour
         }
         Instance = this;
         DontDestroyOnLoad(gameObject);
-
         LoadSpriteInt();
 
     }

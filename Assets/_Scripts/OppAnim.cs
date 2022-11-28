@@ -23,7 +23,7 @@ public class OppAnim : MonoBehaviour
 
     IEnumerator CloseNow()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(3f);
         doNow = false;
         savetoMain();
     }

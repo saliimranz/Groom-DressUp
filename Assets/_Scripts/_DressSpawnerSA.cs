@@ -7,6 +7,8 @@ public class _DressSpawnerSA : MonoBehaviour
 {
     List<Sprite[]> arrayList = new List<Sprite[]>();
     int arraySelected;
+    bool submitActivate;
+    public GameObject submitButton;
 
     public Sprite[] Sherwani;
     public Sprite[] Pants;
@@ -24,6 +26,11 @@ public class _DressSpawnerSA : MonoBehaviour
         arrayList.Add(Turban);
         arrayList.Add(Cape);
     }
+    private void Update()
+    {
+        if (!submitActivate)
+            submitButton.SetActive(false);
+    }
 
     public void ApplyOnClick(bool paid)
     {
@@ -39,28 +46,28 @@ public class _DressSpawnerSA : MonoBehaviour
             }
             else if (MainManager.Instance.ItemSelected == 1)
             {
-                if (MainManager.Instance.allDress[MainManager.Instance.itemTransfer] == true)
+                if (MainManager.Instance.allDress[MainManager.Instance.itemTransfer + 1] == true)
                 {
                     goto Continue;
                 }
             }
             else if (MainManager.Instance.ItemSelected == 2)
             {
-                if (MainManager.Instance.allShoes[MainManager.Instance.itemTransfer] == true)
+                if (MainManager.Instance.allShoes[MainManager.Instance.itemTransfer + 1] == true)
                 {
                     goto Continue;
                 }
             }
             else if (MainManager.Instance.ItemSelected == 3)
             {
-                if (MainManager.Instance.allHead[MainManager.Instance.itemTransfer] == true)
+                if (MainManager.Instance.allHead[MainManager.Instance.itemTransfer + 1] == true)
                 {
                     goto Continue;
                 }
             }
             else if (MainManager.Instance.ItemSelected == 4)
             {
-                if (MainManager.Instance.SA_cape[MainManager.Instance.itemTransfer] == true)
+                if (MainManager.Instance.SA_cape[MainManager.Instance.itemTransfer-5] == true)
                 {
                     goto Continue;
                 }
@@ -92,6 +99,7 @@ public class _DressSpawnerSA : MonoBehaviour
         image = gameObject.transform.GetChild(arraySelected).GetComponent<Image>();
 
         image.sprite = arrayList[arraySelected][MainManager.Instance.itemTransfer];
+        submitActivate = true;
     }
 
     public void setMainBool()
@@ -102,19 +110,21 @@ public class _DressSpawnerSA : MonoBehaviour
         }
         else if (MainManager.Instance.ItemSelected == 1)
         {
-            MainManager.Instance.allDress[MainManager.Instance.itemTransfer] = true;
+            MainManager.Instance.allDress[MainManager.Instance.itemTransfer + 1] = true;
+            Debug.Log("Item bought is: " + MainManager.Instance.itemTransfer);
         }
         else if (MainManager.Instance.ItemSelected == 2)
         {
-            MainManager.Instance.allShoes[MainManager.Instance.itemTransfer] = true;
+            MainManager.Instance.allShoes[MainManager.Instance.itemTransfer + 1] = true;
         }
         else if (MainManager.Instance.ItemSelected == 3)
         {
-            MainManager.Instance.allHead[MainManager.Instance.itemTransfer] = true;
+            MainManager.Instance.allHead[MainManager.Instance.itemTransfer + 1] = true;
         }
         else if (MainManager.Instance.ItemSelected == 4)
         {
-            MainManager.Instance.SA_cape[MainManager.Instance.itemTransfer] = true;
+            Debug.Log("MainMAnager Index ha: " + (MainManager.Instance.itemTransfer - 5));
+            MainManager.Instance.SA_cape[MainManager.Instance.itemTransfer - 5] = true;
         }
     }
 }
