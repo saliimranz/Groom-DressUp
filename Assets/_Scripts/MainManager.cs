@@ -39,6 +39,8 @@ public class MainManager : MonoBehaviour
         }
         Instance = this;
         DontDestroyOnLoad(gameObject);
+       // MoneyLeft = 1000;
+       // SaveSpriteInt();
         LoadSpriteInt();
 
     }

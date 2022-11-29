@@ -11,6 +11,7 @@ public class _DressSpawnerME : MonoBehaviour
     int arraySelected;
     bool submitActivate;
     public GameObject submitButton;
+    public GameObject storePannel;
 
     public Sprite[] Shoes;
         public Sprite[] Thawab;
@@ -65,6 +66,7 @@ public class _DressSpawnerME : MonoBehaviour
 
             if (price > MainManager.Instance.MoneyLeft)
             {
+                storePannel.SetActive(true);
                 return;
             }
             else if(price <= MainManager.Instance.MoneyLeft)
