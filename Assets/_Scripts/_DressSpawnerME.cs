@@ -8,14 +8,15 @@ public class _DressSpawnerME : MonoBehaviour
 {
 
     List<Sprite[]> arrayList = new List<Sprite[]>();
+
     int arraySelected;
     bool submitActivate;
     public GameObject submitButton;
     public GameObject storePannel;
 
     public Sprite[] Shoes;
-        public Sprite[] Thawab;
-        public Sprite[] Keffiyeh; 
+    public Sprite[] Thawab;
+    public Sprite[] Keffiyeh; 
 
     private Image image;
 
@@ -55,7 +56,7 @@ public class _DressSpawnerME : MonoBehaviour
             {
                 if (MainManager.Instance.allHead[MainManager.Instance.itemTransfer - 5] == true)
                 {
-                    goto Continue;
+                    goto Continue; 
                 }
             }
             //---------------------Getting Button Details-------------------------------------------------
